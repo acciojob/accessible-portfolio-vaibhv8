@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <header>
+        <h1 role="heading">My Portfolio</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About Me</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2 role="heading">About Me</h2>
+            <img src="https://images.unsplash.com/photo-1682686581484-a220483e6291?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="My Profile Picture" role="img" width=200>
+            <p>
+                I am a web developer passionate about creating accessible and user-friendly websites.
+            </p>
+        </section>
+        <section id="projects">
+            <h2 role="heading">My Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: <a href="project1.html">Project Name 1</a></li>
+                <li role="listitem">Project 2: <a href="project2.html">Project Name 2</a></li>
+                <li role="listitem">Project 3: <a href="project3.html">Project Name 3</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer id="contact">
+        <h2 role="heading">Contact Me</h2>
+        <p>
+            Feel free to contact me at <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+    </footer>
 </body>
-
 </html>
